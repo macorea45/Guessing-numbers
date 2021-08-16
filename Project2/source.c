@@ -19,8 +19,9 @@ int main(void)
     srand((unsigned int)time(NULL));
 
     while (1) {
-        ans = rand() % 100 + 10;
-
+        ans = rand() % 91 + 10;
+        
+            
         printf("10～99の整数を当ててください.\n\n");
 
         stage = 0;
@@ -50,10 +51,10 @@ int main(void)
 
         puts("\n---入力確認---");
         for (i = 0; i < stage; i++)
-            printf("%2d:%d \n ", i + 1, num[i]);
+            printf("\n %2d:%d", i + 1, num[i]);
 
-        printf("数あてゲームを終了しますか？\n");
-        printf("0=終了 0以外=キャンセル\n");
+        printf("\n数あてゲームを終了しますか？");
+        printf("\n0=終了 0以外=キャンセル");
         scanf_s("%d", &c);
 
 
@@ -63,7 +64,7 @@ int main(void)
             break;
         }
     }
-    printf("終了しました。\n\n");
+    printf("\n終了しました。\n\n");
 
 
 
@@ -71,3 +72,4 @@ int main(void)
 
     return 0;
 }
+
